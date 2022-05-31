@@ -79,40 +79,4 @@ class DoctorsScreen extends StatelessWidget {
       ),
     );
   }
-/*
-  Widget _developerInfo(BuildContext context){
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        Divider(color: Colors.blueGrey,height: 0.0),
-        TextButton(
-          onPressed: (){
-            Navigator.pushNamed(context, Home.routeName);
-          },
-          child: Container(
-            width: MediaQuery.of(context).size.width,
-            child: Center(
-              child: Text(
-                'الدخول للتطبيق',
-                style: TextStyle(
-                    fontWeight: FontWeight.w900,
-                fontSize: 22,
-//                color: Colors.blueGrey,
-                    color: KButtonColor1,
-                    height: 1.5
-                ),
-              ),
-            ),
-          ),
-        ),
-//        Text(
-//          'Faissal',
-//          style: TextStyle(
-////              fontSize: Res.of(context, Res.normal),
-//            color: Colors.blueGrey,
-//          ),
-//        )
-      ],
-    );
-  }*/
 }
