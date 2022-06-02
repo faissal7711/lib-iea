@@ -30,12 +30,28 @@ class SignUpAs extends StatelessWidget {
                 ),
               ),
             ),
-            Center(
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: const [
+                DashboardCard(name: 'doctor', imgpath: 'assets/doctor.png'),
+                DashboardCard(name: 'Patient', imgpath: 'assets/patient.png'),
+              ],
+            ),
+            Padding(
+              padding: const EdgeInsets.all(25.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
-                  DashboardCard(name: 'doctor', imgpath: 'assets/doctor.png'),
-                  DashboardCard(name: 'Patient', imgpath: 'assets/patient.png'),
+                  Text(
+                    'Already have an acount?',
+                    style: TextStyle(
+//                      fontSize: 33,
+                      color: Colors.pink,
+                    ),
+                  ),
+                  TextButton(onPressed: onLoginPressed,
+                  child: Text('Login now'),
+                  ),
                 ],
               ),
             ),
@@ -43,5 +59,8 @@ class SignUpAs extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  static void onLoginPressed() {
   }
 }
